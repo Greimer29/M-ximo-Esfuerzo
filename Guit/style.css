@@ -1,0 +1,15 @@
+#padre {
+    color: brown;
+    background-image: url(https://ih1.redbubble.net/image.1058752534.0449/pp,840x830-pad,1000x1000,f8f8f8.u2.jpg);
+    background-size: contain;
+    width: 400px;
+}
+
+#hijo {
+    color: rgb(238, 5, 5);
+}
+
+#tituloP {
+    text-align: center;
+    color: darkred;
+}
