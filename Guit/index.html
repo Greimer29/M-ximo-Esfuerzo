@@ -11,19 +11,26 @@
 
 <body>
     <header>
-        <div class="barra-head">
-            <h1 class="de">
-                Barra de Navegación
-            </h1>
-            <h1>
-                Barra d
-            </h1>
-            <h1>
-                Barra
-            </h1>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    Personajes
+                </li>
+                <li>
+                    Historia
+                </li>
+                <li>
+                    Imágenes
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section>
+            <div>
+                <img src="https://ih1.redbubble.net/image.1058752534.0449/pp,840x830-pad,1000x1000,f8f8f8.u2.jpg" alt="imagen-yoriichi">
+            </div>
+        </section>
         <section>
             <p>
                 Primer párrafo, Yoriichi fué el creador de las respiraciones usadas para matar efectivamente a los demonios, la llamó respiración solar devido a que el sol era la única arma totalmente efectiva para matar a los demonios.
@@ -42,41 +49,6 @@
     </main>
 
     <script>
-        var n = 0;
-        var parrafo = document.querySelectorAll('p');
-        var bot = document.getElementById("bot");
-        var bot2 = document.getElementById("bot2");
-
-        function seleccionar() {
-            if (bot.onclick) {
-                console.log(parrafo[0])
-                n = n + 1;
-            }
-            console.log(n)
-        }
-
-        function aja() {
-            parrafo[n - 1].style.borderColor = "orange";
-            parrafo[n - 1].style.borderWidth = "5px";
-        }
-
-        function cambiar() {
-            if (n == 1) {
-                parrafo[0].style.border = "double";
-            } else if (n == 2) {
-                parrafo[1].style.backgroundColor = "blue";
-            } else if (n == 3) {
-                parrafo[2].style.backgroundColor = "yellow";
-            } else if (n > 3) {
-                n = 0;
-            }
-        }
-
-        console.log(parrafo)
-
-        bot.onclick = seleccionar;
-
-        bot2.onclick = cambiar;
     </script>
 </body>
 
